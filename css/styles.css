@@ -1,0 +1,310 @@
+:root {
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --cornflover: #e7e9fc;
+  --ocean: #404bbf;
+  --slate: #434455;
+  --navyblue: #2e2f42;
+  --white: #fff;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--navyblue, #2e2f42);
+  font-weight: 400;
+}
+.container {
+  max-width: 1158px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.credo {
+  color: var(--cloud, #f4f4fd);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--navyblue, #2e2f42);
+}
+.filtr {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--iris, #4d5ae5);
+  text-align: center;
+  background-color: var(--cloud, #f4f4fd);
+  border-radius: 4px;
+  border: 1px solid var(--cornflover, #e7e9fc);
+  text-align: center;
+  font-family: inherit;
+}
+.filtr:hover,
+.filtr:focus {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--white, #fff);
+  text-align: center;
+  background-color: var(--ocean, #404bbf);
+  border-radius: 4px;
+  border: 1px solid var(--cornflover, #e7e9fc);
+  text-align: center;
+}
+.contacts {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--slate, #434455);
+  text-decoration: none;
+  justify-content: space-between;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--ocean, #404bbf);
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.116;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--iris, #4d5ae5);
+  margin-left: 0px;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--iris, #4d5ae5);
+}
+.navlinks {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  color: var(--navyblue, #2e2f42);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navlinks:hover,
+.navlinks:focus {
+  color: var(--iris, #4d5ae5);
+}
+.main-links {
+  text-decoration: none;
+}
+.description,
+.job-position,
+.section1 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--slate, #434455);
+}
+.description {
+  margin-top: 0px;
+}
+.order {
+  background-color: var(--iris, #4d5ae5);
+  color: var(--white, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  gap: 10px;
+}
+.order:hover {
+  background-color: var(--ocean, #404bbf);
+}
+.third-heading {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  /*hejka, w Figmie mamy headery nych kart wpisane jako Header 3 czy musimy to zmienić?*/
+  color: var(--navyblue, #2e2f42);
+  margin-bottom: 0px;
+}
+.second-heading {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.first-heading {
+  color: var(--white, #fff);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+button {
+  cursor: pointer;
+}
+.logo-part {
+  color: var(--navyblue, #2e2f42);
+}
+.logo-down {
+  color: var(--cloud, #f4f4fd);
+}
+.logo-part:hover,
+.logo-part:focus,
+.logo-down:hover,
+.logo-down:focus {
+  color: var(--iris, #4d5ae5);
+}
+
+.first-section {
+  background-color: var(--navyblue, #2e2f42);
+}
+.second-section {
+  background-color: var(--white, #fff);
+}
+.third-section {
+  background-color: var(--cloud, #f4f4fd);
+}
+.down {
+  background-color: var(--navyblue, #2e2f42);
+}
+.paragrafs {
+  color: var(--slate, #434455);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.first-area {
+  height: 72px;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part-navlinks,
+.part-contact-links {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks-list {
+}
+
+.navlinks:first-child {
+  margin-left: 76px;
+  margin-right: 40px;
+}
+.navlinks:last-child {
+  margin-left: 40px;
+  margin-right: auto;
+}
+.contacts:last-child {
+  margin-left: 40px;
+  margin-right: 0px;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.first-heading {
+  max-width: 496px;
+  text-align: center;
+}
+.description-item {
+  max-width: 264px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.block-description {
+  column-gap: 24px;
+  flex-wrap: nowrap;
+}
+.block-description:first-child {
+  margin-left: 0px;
+}
+.block-description:last-child {
+  margin-right: 0px;
+}
+.images-section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.images-section-item:first-child {
+  margin-left: 0px;
+  margin-right: 24px;
+}
+.images-section-item:last-child {
+  margin-right: 0px;
+  margin-left: 24px;
+}
+.third-section > .second-heading {
+  display: flex;
+  justify-content: center;
+}
+.images-section2 {
+  display: flex;
+  flex-wrap: nowrap;
+  row-gap: 24px;
+  align-items: center;
+  flex-direction: row;
+}
+.images-section-item2 {
+  flex-basis: calc((100%-24px) / 3);
+}
+.images-section-item2:first-child {
+  margin-left: 0px;
+  margin-right: 24px;
+}
+.images-section-item2:nth-child(3) {
+  margin-left: 24px;
+}
+.images-section-item2:last-child {
+  margin-right: 0px;
+  margin-left: 24px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 45px;
+}
+.footer-container > .logo {
+  margin-top: 101.5px;
+  gap: 17.5px;
+}
+.footer-container > .credo {
+  max-width: 264px;
+}
