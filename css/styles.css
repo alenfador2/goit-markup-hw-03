@@ -41,6 +41,18 @@ body {
   border: 1px solid var(--cornflover, #e7e9fc);
   text-align: center;
   font-family: inherit;
+  border-radius: 4px;
+  padding: 12px 24px;
+  margin-inline: 24px;
+}
+.filtr-list {
+  margin-bottom: 72px;
+}
+.filtr-list:first-child {
+  margin-left: 0px;
+}
+.filtr-list:last-child {
+  margin-right: 0px;
 }
 .filtr:hover,
 .filtr:focus {
@@ -102,6 +114,7 @@ body {
 }
 .main-links {
   text-decoration: none;
+  max-width: 360px;
 }
 .description,
 .job-position,
@@ -111,8 +124,14 @@ body {
   letter-spacing: 0.32px;
   color: var(--slate, #434455);
 }
+.job-position {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*text-align: center;*/
+}
 .description {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 .order {
   background-color: var(--iris, #4d5ae5);
@@ -140,6 +159,8 @@ body {
   /*hejka, w Figmie mamy headery nych kart wpisane jako Header 3 czy musimy to zmienić?*/
   color: var(--navyblue, #2e2f42);
   margin-bottom: 0px;
+  margin-top: 0px;
+  /*text-align: center;*/
 }
 .second-heading {
   font-size: 36px;
@@ -203,12 +224,12 @@ button {
   background: var(--white, #fff);
   display: flex;
   justify-content: space-between;
-  padding-left: 45px;
 }
 ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding-inline-start: 0px;
 }
 .part-navlinks,
 .part-contact-links {
@@ -282,7 +303,18 @@ ul {
   flex-direction: row;
 }
 .images-section-item2 {
-  flex-basis: calc((100%-24px) / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 0px;
+  justify-content: flex-start;
+  padding-bottom: 0px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .images-section-item2:first-child {
   margin-left: 0px;
@@ -299,7 +331,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 45px;
 }
 .footer-container > .logo {
   margin-top: 101.5px;
@@ -307,4 +338,44 @@ ul {
 }
 .footer-container > .credo {
   max-width: 264px;
+}
+.no-visible-header:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.button-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-links-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.main-links-item:nth-child(1n + 3) {
+  margin-left: 0px;
+}
+.main-links-item {
+  flex-basis: calc((100%-24px) / 3);
+}
+.main-links-item:nth-child(-n + 6) {
+  margin-bottom: 48px;
+}
+.down-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+img {
+  display: block;
 }
