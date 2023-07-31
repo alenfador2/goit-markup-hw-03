@@ -14,7 +14,7 @@ body {
 }
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin: 0 156px;
   padding: 0 15px;
 }
 .section {
@@ -95,7 +95,6 @@ body {
   font-size: 18px;
   color: var(--iris, #4d5ae5);
   margin-left: 0px;
-  margin-right: 76px;
 }
 .logo:hover,
 .logo:focus {
@@ -119,6 +118,9 @@ body {
 .main-links {
   text-decoration: none;
   max-width: 360px;
+}
+main > .section {
+  padding: 96px 0 120px 0;
 }
 
 .description,
@@ -176,7 +178,6 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
-  text-align: center;
 }
 .other-section {
   padding: 120px 0;
@@ -215,7 +216,6 @@ button {
 .logo-down:focus {
   color: var(--iris, #4d5ae5);
 }
-
 .first-section {
   background-color: var(--navyblue, #2e2f42);
 }
@@ -236,6 +236,7 @@ button {
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-top: 8px;
 }
 .top-header {
   height: 72px;
@@ -261,22 +262,19 @@ ul {
   display: flex;
   align-items: center;
 }
+.part-navlinks > .logo {
+  margin-left: 0px;
+}
 .navlinks-items-list {
   padding: 24px 0;
 }
-
+.navlinks-items-list:first-child {
+  margin-left: 76px;
+}
 .navlinks-items-list:last-child {
   margin-right: 0px;
 }
 
-.navlinks:first-child {
-  margin-left: 76px;
-  margin-right: 40px;
-}
-.navlinks:last-child {
-  margin-left: 40px;
-  margin-right: auto;
-}
 .contacts-list {
   display: flex;
   gap: 40px;
@@ -369,7 +367,7 @@ ul {
 .footer-container > .credo {
   max-width: 264px;
 }
-.no-visible-header:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   height: 1px;
@@ -380,8 +378,9 @@ ul {
 }
 .button-list {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 72px;
 }
 .main-links-list {
   display: flex;
@@ -389,15 +388,13 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 48px;
 }
 .main-links-item:nth-child(1n + 3) {
   margin-left: 0px;
 }
-.main-links-item {
-  flex-basis: calc((100%-24px) / 3);
-}
-.main-links-item:nth-child(-n + 6) {
-  margin-bottom: 48px;
+.main-links-item:first-child {
+  width: calc((100% - 48px) / 3);
 }
 .down-description {
   display: flex;
@@ -423,4 +420,9 @@ img {
 
 .down {
   padding: 100px 0;
+}
+.description-down {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  border-top: none;
 }

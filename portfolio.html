@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
@@ -17,30 +10,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="container first-area">
-        <div class="part-navlinks">
+    <header class="top-header">
+      <div class="container header-container">
+        <nav class="part-navlinks">
           <a class="logo" href="./index.html"
             >WEB<span class="logo-part">STUDIO</span></a
           >
-          <nav>
-            <ul class="navlinks-list">
-              <li class="navlinks-items-list">
-                <a class="navlinks" href="./index.html">Studio</a>
-              </li>
-              <li class="navlinks-items-list">
-                <a class="navlinks" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="navlinks-items-list">
-                <a class="navlinks" href="#">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="part-contact-links">
+          <menu class="main-menu">
+            <li class="navlinks-items-list">
+              <a class="navlinks" href="./index.html">Studio</a>
+            </li>
+            <li class="navlinks-items-list">
+              <a class="navlinks" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navlinks-items-list">
+              <a class="navlinks" href="#">Contacts</a>
+            </li>
+          </menu>
+        </nav>
+        <address class="part-contact-links">
           <ul class="contacts-list">
             <li>
               <a class="contacts" href="mailto:info@devstudio.com"
@@ -53,34 +55,30 @@
               >
             </li>
           </ul>
-        </div>
+        </address>
       </div>
     </header>
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="no-visible-header">Portfolio</h1>
-          <div class="filtr-list">
-            <ul class="button-list">
-              <li>
-                <button type="button" class="filtr">All</button>
-              </li>
-              <li>
-                <button type="button" class="filtr">Website</button>
-              </li>
-              <li>
-                <button type="button" class="filtr">App</button>
-              </li>
-              <li>
-                <button type="button" class="filtr">Design</button>
-              </li>
-              <li>
-                <button type="button" class="filtr">Marketing</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+          <ul class="button-list">
+            <li>
+              <button type="button" class="filtr">All</button>
+            </li>
+            <li>
+              <button type="button" class="filtr">Website</button>
+            </li>
+            <li>
+              <button type="button" class="filtr">App</button>
+            </li>
+            <li>
+              <button type="button" class="filtr">Design</button>
+            </li>
+            <li>
+              <button type="button" class="filtr">Marketing</button>
+            </li>
+          </ul>
           <ul class="main-links-list">
             <li class="main-links-item">
               <a class="main-links" href="#"
@@ -90,8 +88,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Banking App Interface Concept</h3>
-                <p class="paragrafs">App</p>
+                <div class="description-down">
+                  <h3 class="third-heading">Banking App Interface Concept</h3>
+                  <p class="paragrafs">App</p>
+                </div>
               </a>
             </li>
             <li class="main-links-item">
@@ -102,8 +102,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Cashless Payment</h3>
-                <p class="paragrafs">Marketing</p>
+                <div class="description-down">
+                  <h3 class="third-heading">Cashless Payment</h3>
+                  <p class="paragrafs">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="main-links-item">
@@ -114,8 +116,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Meditation App</h3>
-                <p class="paragrafs">App</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Meditation App</h3>
+                  <p class="paragrafs">App</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -126,8 +130,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Taxi Service</h3>
-                <p class="paragrafs">Marketing</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Taxi Service</h3>
+                  <p class="paragrafs">Marketing</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -138,8 +144,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Screen Illustrations</h3>
-                <p class="paragrafs">Design</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Screen Illustrations</h3>
+                  <p class="paragrafs">Design</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -150,8 +158,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Online Courses</h3>
-                <p class="paragrafs">Marketing</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Online Courses</h3>
+                  <p class="paragrafs">Marketing</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -162,8 +172,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Instagram Stories Concept</h3>
-                <p class="paragrafs">Design</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Instagram Stories Concept</h3>
+                  <p class="paragrafs">Design</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -174,8 +186,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Organic Food</h3>
-                <p class="paragrafs">Web Site</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Organic Food</h3>
+                  <p class="paragrafs">Web Site</p>
+                </div></a
               >
             </li>
             <li class="main-links-item">
@@ -186,8 +200,10 @@
                   width="360"
                   height="300"
                 />
-                <h3 class="third-heading">Fresh Cofee</h3>
-                <p class="paragrafs">Web Site</p></a
+                <div class="description-down">
+                  <h3 class="third-heading">Fresh Cofee</h3>
+                  <p class="paragrafs">Web Site</p>
+                </div></a
               >
             </li>
           </ul>
