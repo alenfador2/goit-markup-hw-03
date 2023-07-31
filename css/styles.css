@@ -92,6 +92,7 @@ body {
   font-size: 18px;
   color: var(--iris, #4d5ae5);
   margin-left: 0px;
+  margin-right: 76px;
 }
 .logo:hover,
 .logo:focus {
@@ -116,6 +117,7 @@ body {
   text-decoration: none;
   max-width: 360px;
 }
+
 .description,
 .job-position,
 .section1 {
@@ -124,10 +126,14 @@ body {
   letter-spacing: 0.32px;
   color: var(--slate, #434455);
 }
+.main-menu {
+  display: flex;
+  gap: 40px;
+}
 .job-position {
   margin-top: 0px;
   margin-bottom: 0px;
-  /*text-align: center;*/
+  text-align: center;
 }
 .description {
   margin-top: 0px;
@@ -141,11 +147,18 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 0.64px;
-  padding: 16px 32px;
+  padding: 32px;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  gap: 10px;
+  min-width: 169px;
+  height: 56px;
 }
 .order:hover {
   background-color: var(--ocean, #404bbf);
@@ -158,9 +171,12 @@ body {
   letter-spacing: 0.4px;
   /*hejka, w Figmie mamy headery nych kart wpisane jako Header 3 czy musimy to zmienić?*/
   color: var(--navyblue, #2e2f42);
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   margin-top: 0px;
-  /*text-align: center;*/
+  text-align: center;
+}
+.other-section {
+  padding: 120px 0;
 }
 .second-heading {
   font-size: 36px;
@@ -218,7 +234,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.first-area {
+.top-header {
   height: 72px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
@@ -236,8 +252,13 @@ ul {
   display: flex;
   align-items: center;
 }
+.navlinks-items-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
-.navlinks-list {
+.navlinks-items-list:last-child {
+  margin-right: 0px;
 }
 
 .navlinks:first-child {
@@ -247,6 +268,10 @@ ul {
 .navlinks:last-child {
   margin-left: 40px;
   margin-right: auto;
+}
+.contacts-links {
+  display: flex;
+  gap: 40px;
 }
 .contacts:last-child {
   margin-left: 40px;
@@ -258,6 +283,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .first-heading {
   max-width: 496px;
@@ -267,29 +293,36 @@ ul {
   max-width: 264px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 .block-description {
   column-gap: 24px;
   flex-wrap: nowrap;
+  display: flex;
+  gap: 24px;
 }
-.block-description:first-child {
+.description-item:first-child {
   margin-left: 0px;
+  flex-basis: calc((100%-3 * 24px) / 4);
 }
-.block-description:last-child {
+.description-item:last-child {
   margin-right: 0px;
 }
 .images-section {
   display: flex;
   flex-wrap: nowrap;
+  gap: 24px;
 }
 .images-section-item:first-child {
   margin-left: 0px;
-  margin-right: 24px;
 }
+
 .images-section-item:last-child {
   margin-right: 0px;
-  margin-left: 24px;
+}
+.job-images-section {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
 }
 .third-section > .second-heading {
   display: flex;
@@ -306,9 +339,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
   padding-top: 0px;
-  justify-content: flex-start;
   padding-bottom: 0px;
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
@@ -318,14 +349,9 @@ ul {
 }
 .images-section-item2:first-child {
   margin-left: 0px;
-  margin-right: 24px;
-}
-.images-section-item2:nth-child(3) {
-  margin-left: 24px;
 }
 .images-section-item2:last-child {
   margin-right: 0px;
-  margin-left: 24px;
 }
 .footer-container {
   display: flex;
@@ -374,8 +400,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  padding: 32px 16px;
 }
 img {
   display: block;
+}
+.first-section {
+  padding: 188px 0px;
 }
