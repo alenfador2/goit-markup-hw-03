@@ -12,6 +12,15 @@ body {
   color: var(--navyblue, #2e2f42);
   font-weight: 400;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -120,10 +129,6 @@ body {
   text-decoration: none;
   max-width: 360px;
 }
-main > .section {
-  padding: 96px 0 120px 0;
-}
-
 .description,
 .job-position,
 .section1 {
@@ -155,6 +160,7 @@ main > .section {
   font-weight: 500;
   line-height: 1.5;
   display: block;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 0.64px;
   padding: 16px 32px;
@@ -173,12 +179,16 @@ main > .section {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  text-align: center;
   /*hejka, w Figmie mamy headery nych kart wpisane jako Header 3 czy musimy to zmienić?*/
   color: var(--navyblue, #2e2f42);
   margin-bottom: 8px;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
+}
+.description-down > .third-heading {
+  text-align: left;
 }
 .other-section {
   padding: 120px 0;
@@ -189,9 +199,8 @@ main > .section {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
+  text-align: center;
   text-transform: capitalize;
-  display: flex;
-  justify-content: center;
   margin-bottom: 72px;
 }
 .first-heading {
@@ -201,6 +210,10 @@ main > .section {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 button {
   cursor: pointer;
@@ -222,6 +235,7 @@ button {
 }
 .second-section {
   background-color: var(--white, #fff);
+  margin-top: 0;
 }
 .third-section {
   background-color: var(--cloud, #f4f4fd);
@@ -242,26 +256,32 @@ button {
 .top-header {
   height: 72px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
   display: flex;
-  justify-content: space-between;
 }
 .top-header > .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+a {
+  text-decoration: none;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
   padding-inline-start: 0px;
 }
-.part-navlinks,
+.part-navlinks {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+}
 .part-contact-links {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .part-navlinks > .logo {
   margin-left: 0px;
@@ -279,22 +299,17 @@ ul {
   gap: 40px;
 }
 
-.button-container {
+/*.button-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.first-heading {
-  max-width: 496px;
-  text-align: center;
-}
+}*/
+
 .description-item {
   max-width: 264px;
-  display: flex;
-  flex-direction: column;
 }
 .block-description {
   flex-wrap: nowrap;
@@ -302,7 +317,6 @@ ul {
   gap: 24px;
 }
 .description-item:first-child {
-  margin-left: 0px;
   flex-basis: calc((100%-72px) / 4);
 }
 .description-item:last-child {
@@ -312,9 +326,6 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   gap: 24px;
-}
-.images-section-item:first-child {
-  margin-left: 0px;
 }
 
 .images-section-item:last-child {
@@ -337,11 +348,6 @@ ul {
   flex-direction: row;
 }
 .images-section-item2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -360,7 +366,6 @@ ul {
   justify-content: flex-start;
 }
 .footer-container > .logo {
-  margin-top: 101.5px;
   gap: 17.5px;
 }
 .footer-container > .credo {
@@ -375,6 +380,16 @@ ul {
   white-space: nowrap;
   width: 1px;
 }
+/*ten visually-hidden nam polecał trener kijhank*/
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  podany panem visually hidden nie działa
+}*/
 .button-list {
   display: flex;
   align-items: center;
@@ -396,14 +411,12 @@ ul {
   width: calc((100% - 48px) / 3);
 }
 .down-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 32px 16px;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .first-section {
   padding: 188px 0px;
