@@ -30,7 +30,7 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-main > .section {
+.card-section {
   padding: 96px 0px 120px 0px;
 }
 .credo {
