@@ -30,6 +30,9 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+main > .section {
+  padding: 96px 0px 120px 0px;
+}
 .credo {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
@@ -53,7 +56,6 @@ p {
   font-family: inherit;
   border-radius: 4px;
   padding: 12px 24px;
-  margin-inline: 24px;
 }
 .filtr-list {
   margin-bottom: 72px;
@@ -91,9 +93,6 @@ p {
 .contacts:focus {
   color: var(--ocean, #404bbf);
 }
-.down {
-  padding: 100px 0px;
-}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -127,7 +126,6 @@ p {
 }
 .main-links {
   text-decoration: none;
-  max-width: 360px;
 }
 .description,
 .job-position,
@@ -179,7 +177,6 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  text-align: center;
   /*hejka, w Figmie mamy headery nych kart wpisane jako Header 3 czy musimy to zmienić?*/
   color: var(--navyblue, #2e2f42);
   margin-bottom: 8px;
@@ -187,8 +184,8 @@ p {
   padding-bottom: 0px;
   margin-top: 0px;
 }
-.description-down > .third-heading {
-  text-align: left;
+.down-description > .third-heading {
+  text-align: center;
 }
 .other-section {
   padding: 120px 0;
@@ -235,13 +232,14 @@ button {
 }
 .second-section {
   background-color: var(--white, #fff);
-  margin-top: 0;
+  padding-top: 0;
 }
 .third-section {
   background-color: var(--cloud, #f4f4fd);
 }
 .down {
   background-color: var(--navyblue, #2e2f42);
+  padding: 100px 0;
 }
 .paragrafs {
   color: var(--slate, #434455);
@@ -251,7 +249,6 @@ button {
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin-top: 8px;
 }
 .top-header {
   height: 72px;
@@ -281,7 +278,6 @@ ul {
 .part-contact-links {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 .part-navlinks > .logo {
   margin-left: 0px;
@@ -361,7 +357,7 @@ ul {
   margin-right: 0px;
 }
 .footer-container {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -395,11 +391,10 @@ ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 72px;
+  gap: 24px;
 }
 .main-links-list {
   display: flex;
-  align-items: flex-start;
-  flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
@@ -430,9 +425,6 @@ img {
   margin-bottom: 16px;
 }
 
-.down {
-  padding: 100px 0;
-}
 .description-down {
   padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
